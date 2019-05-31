@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <script src="https://unpkg.com/axios/dist/axioa.min.js"></script>
+</head>
+<body>
+  <script>
+    axios.get("http://localhost:3000/api/recipes").then(function(response) {
+      response.data.forEach(function(recipe){
+    console.log(response.title);
+  });
+    });
+  </script>
+  
+</body>
+</html>
